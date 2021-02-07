@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [{ "src": "FlutterAPI.js", "use": "@now/node-server" }],
+     "routes": [
+         {"src": "/db", "dest": "/FlutterAPI.js"},
+         {"src": "/db2", "dest": "/FlutterAPI.js"},
+         {
+           "src": "/", "methods": ["POST", "GET"],
+            "dest": "/FlutterAPI.js"
+         }
+     ]
+     
+  }
